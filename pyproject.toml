@@ -1,0 +1,29 @@
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opal_auth_backend"
+version = "0.1.0"
+authors = [
+  { name="OpalSuite Team", email="contact@opalsuite.com" },
+]
+description = "Authentication backend for OpalSuite"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "fastapi",
+    "passlib[bcrypt]",
+    "python-jose[cryptography]",
+    "opal_database @ git+https://github.com/opalsuite/opal-database.git@0.1.0#egg=opal_database",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/opalsuite/opal-auth-backend"
+"Bug Tracker" = "https://github.com/opalsuite/opal-auth-backend/issues"
