@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/stephendavid77/opal-dev-tools
-    rev: main
+    rev: 49317b2 # Specific commit hash
     hooks:
       - id: trailing-whitespace
       - id: end-of-file-fixer
@@ -16,3 +16,4 @@ repos:
       - id: check-dependencies
       - id: check-imports
       - id: check-structure
+      - id: pytest
