@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 
 from sqlalchemy.orm import Session
 
-from shared.database_base.models.user import User
+from opal_database.database_base.models.user import User
 
 
 def generate_otp_code():

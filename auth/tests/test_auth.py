@@ -23,8 +23,8 @@ from shared.auth.auth import (
 from shared.auth.otp.senders.email.email_sender import EmailOTPSender
 from shared.auth.otp.otp_manager import generate_otp, validate_otp
 from shared.auth.otp.otp_sender_factory import get_otp_sender
-from shared.database_base.database import Base, get_db
-from shared.database_base.models.user import User
+from opal_database.database_base.database import Base, get_db
+from opal_database.database_base.models.user import User
 
 
 # Mock the OTP sender to prevent actual email sending during tests

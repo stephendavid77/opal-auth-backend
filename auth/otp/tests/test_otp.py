@@ -8,7 +8,7 @@ from shared.auth.otp.otp_manager import generate_otp, generate_otp_code, validat
 from shared.auth.otp.senders.email.email_sender import EmailOTPSender
 from shared.auth.otp.senders.sms.sms_adapters import SNSAdapter, TwilioAdapter
 from shared.auth.otp.senders.sms.sms_sender import SMSOTPSender
-from shared.database_base.models.user import User
+from opal_database.database_base.models.user import User
 
 
 @pytest.fixture

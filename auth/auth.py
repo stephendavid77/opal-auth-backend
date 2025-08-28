@@ -15,8 +15,8 @@ from shared.auth.otp.otp_manager import generate_otp as otp_generate_code
 from shared.auth.otp.otp_manager import validate_otp as otp_validate_code
 from shared.auth.otp.otp_sender_factory import get_otp_sender
 from shared.auth.otp.senders.email.email_sender import EmailOTPSender
-from shared.database_base.database import get_db
-from shared.database_base.models.user import User
+from opal_database.database_base.database import get_db
+from opal_database.database_base.models.user import User
 
 otp_sender = get_otp_sender()
 
